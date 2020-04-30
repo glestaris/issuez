@@ -1,6 +1,6 @@
-# JIRA PM Productivity CLI
+# Issuez
 
-CLI tool for making JIRA PM's more productive.
+Importing Tickets to Jira from Markdown.
 
 Inspired by [Onsi's Prolific](https://github.com/onsi/prolific).
 
