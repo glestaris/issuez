@@ -5,7 +5,7 @@
 .vim
 
 # Binary 
-/jira-pm
+/issuez
 
 # Coverage artifacts
 /cp.out
