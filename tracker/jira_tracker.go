@@ -77,7 +77,7 @@ func (j *jiraTrackerService) ImportIssues(domainIssues []*domain.Issue) error {
 		if entry.Err != nil {
 			log.Printf("Failed to import issue '%s': %s",
 				domainIssues[i].Title,
-				err)
+				entry.Err)
 			continue
 		}
 		domainIssues[i].ID = entry.NewIssueKey
