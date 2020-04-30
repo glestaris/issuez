@@ -166,7 +166,7 @@ func (c *Client) ImportIssues(
 	for _, respErr := range respBody.Errors {
 		respErrBytes, _ := json.Marshal(respErr.ElementErrors)
 		log.Printf(
-			"Failed to process issue %d: %v", respErr.FailedElementIdx,
+			"Failed to process issue %d: %v", respErr.FailedElementIdx + 1,
 			string(respErrBytes),
 		)
 		retVal[respErr.FailedElementIdx].Err = errors.New(
