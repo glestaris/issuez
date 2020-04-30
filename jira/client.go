@@ -56,7 +56,7 @@ type Issue struct {
 	Labels      []string
 }
 
-func (i Issue) TypeName() string {
+func (i Issue) String() string {
 	switch i.Type {
 	case IssueTypeBug:
 		return "Bug"
@@ -129,7 +129,7 @@ func (c *Client) ImportIssues(
 	for i, issue := range issues {
 		reqBodyIssue := issImpReqIssue{}
 		reqBodyIssue.Fields.Project.Key = issue.ProjectKey
-		reqBodyIssue.Fields.IssueType.Name = issue.TypeName()
+		reqBodyIssue.Fields.IssueType.Name = issue.String()
 		reqBodyIssue.Fields.Summary = issue.Summary
 		reqBodyIssue.Fields.Description = issue.Description
 		if issue.EpicKey != "" {
