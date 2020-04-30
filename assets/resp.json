@@ -1,0 +1,21 @@
+{
+  "issues": [],
+  "errors": [
+    {
+      "status": 400,
+      "elementErrors": {
+        "errorMessages": [],
+        "errors": { "parent": "Could not find issue by id or key." }
+      },
+      "failedElementNumber": 0
+    },
+    {
+      "status": 400,
+      "elementErrors": {
+        "errorMessages": [],
+        "errors": { "parent": "Could not find issue by id or key." }
+      },
+      "failedElementNumber": 1
+    }
+  ]
+}

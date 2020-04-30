@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "type": "doc",
+  "content": [
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 1
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "A paragraph"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Hello world of "
+        },
+        {
+          "type": "text",
+          "text": "bold text",
+          "marks": [{ "type": "strong" }]
+        },
+        {
+          "type": "text",
+          "text": " which can be also "
+        },
+        {
+          "type": "text",
+          "text": "italics",
+          "marks": [{ "type": "em" }]
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "text",
+          "text": "stikethrough",
+          "marks": [{ "type": "strike" }]
+        },
+        {
+          "type": "text",
+          "text": " or "
+        },
+        {
+          "type": "text",
+          "text": "code",
+          "marks": [{ "type": "code" }]
+        },
+        {
+          "type": "text",
+          "text": "."
+        },
+        {
+          "type": "text",
+          "text": " And of course, it can be "
+        },
+        {
+          "type": "text",
+          "text": "multiple things at once",
+          "marks": [{ "type": "strong" }, { "type": "em" }]
+        },
+        {
+          "type": "text",
+          "text": " as well."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "An ordered list..."
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "New nodes"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "And "
+                },
+                {
+                  "type": "text",
+                  "text": "links",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": { "href": "https://google.com" }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 2
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "An un-ordered (bullet) list..."
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "We like bullets"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Too"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "And some code..."
+        }
+      ]
+    },
+    {
+      "type": "codeBlock",
+      "attrs": {
+        "language": "python"
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "x = 12\n"
+        }
+      ]
+    }
+  ]
+}

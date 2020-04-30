@@ -1,0 +1,239 @@
+{
+  "issueUpdates": [
+    {
+      "update": {
+        "worklog": [
+          {
+            "add": {
+              "timeSpent": "60m",
+              "started": "2019-07-05T11:05:00.000+0000"
+            }
+          }
+        ]
+      },
+      "fields": {
+        "summary": "Main order flow broken",
+        "issuetype": {
+          "id": "10000"
+        },
+        "components": [
+          {
+            "id": "10000"
+          }
+        ],
+        "customfield_20000": "06/Jul/19 3:25 PM",
+        "customfield_40000": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Occurs on all orders",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_70000": ["jira-administrators", "jira-software-users"],
+        "project": {
+          "id": "10000"
+        },
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Order entry fails when selecting supplier.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "reporter": {
+          "id": "5b10a2844c20165700ede21g"
+        },
+        "fixVersions": [
+          {
+            "id": "10001"
+          }
+        ],
+        "customfield_10000": "09/Jun/19",
+        "priority": {
+          "id": "20000"
+        },
+        "labels": ["bugfix", "blitz_test"],
+        "timetracking": {
+          "remainingEstimate": "5",
+          "originalEstimate": "10"
+        },
+        "customfield_30000": ["10000", "10002"],
+        "customfield_80000": {
+          "value": "red"
+        },
+        "security": {
+          "id": "10000"
+        },
+        "environment": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "UAT",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "versions": [
+          {
+            "id": "10000"
+          }
+        ],
+        "duedate": "2011-03-11T00:00:00.000Z",
+        "customfield_60000": "jira-software-users",
+        "customfield_50000": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Could impact day-to-day work.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "assignee": {
+          "id": "5b109f2e9729b51b54dc274d"
+        }
+      }
+    },
+    {
+      "update": {},
+      "fields": {
+        "summary": "Order stuck in pending",
+        "issuetype": {
+          "id": "10000"
+        },
+        "components": [
+          {
+            "id": "10000"
+          }
+        ],
+        "customfield_20000": "06/Jul/19 3:25 PM",
+        "customfield_40000": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Occurs on all orders",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_70000": ["jira-administrators", "jira-software-users"],
+        "project": {
+          "id": "1000"
+        },
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Order remains pending after approved.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "reporter": {
+          "id": "5b10a2844c20165700ede21g"
+        },
+        "fixVersions": [
+          {
+            "id": "10001"
+          }
+        ],
+        "customfield_10000": "09/Jun/19",
+        "priority": {
+          "id": "20000"
+        },
+        "labels": ["new_release"],
+        "timetracking": {
+          "remainingEstimate": "5",
+          "originalEstimate": "15"
+        },
+        "customfield_30000": ["10000", "10002"],
+        "customfield_80000": {
+          "value": "red"
+        },
+        "security": {
+          "id": "10000"
+        },
+        "environment": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "UAT",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "versions": [
+          {
+            "id": "10000"
+          }
+        ],
+        "duedate": "2019-04-16T00:00:00.000Z",
+        "customfield_60000": "jira-software-users",
+        "customfield_50000": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Could impact day-to-day work.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "assignee": {
+          "id": "5b109f2e9729b51b54dc274d"
+        }
+      }
+    }
+  ]
+}

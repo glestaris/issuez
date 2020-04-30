@@ -1,0 +1,6 @@
+# vi: set ft=sh
+export TEST_JIRA_API_HOST="xxx"
+export TEST_JIRA_API_USERNAME="xxx"
+export TEST_JIRA_API_TOKEN="xxx"
+export TEST_JIRA_PROJECT_KEY="xxx"
+export TEST_JIRA_EPIC_KEY="xxx"
