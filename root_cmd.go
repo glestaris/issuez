@@ -14,7 +14,7 @@ var (
 
 var rootCmd = &cobra.Command{
 	Use:   "issuez",
-	Short: "JIRA PM is a CLI too for the Unix-loving PMs who are stuck with JIRA.",
+    Short: "Importing Tickets to Jira from Markdown.",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Please use one of the subcommands.")
 	},

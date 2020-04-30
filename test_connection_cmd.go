@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/spf13/cobra"
-	jirapm "github.com/glestaris/issuez"
 	"github.com/glestaris/issuez/domain"
+	"github.com/glestaris/issuez/tracker"
+	"github.com/spf13/cobra"
 )
 
 func init() {
@@ -17,7 +17,7 @@ var testConnectionCmd = &cobra.Command{
 	Use:   "test-connection",
 	Short: "Tests JIRA connection",
 	Run: func(cmd *cobra.Command, args []string) {
-		trackerService, err := jirapm.NewTrackerService(domain.Tracker{
+		trackerService, err := tracker.NewTrackerService(domain.Tracker{
 			Type: "jira",
 			Config: map[string]string{
 				"apiHost":     jiraAPIHost,

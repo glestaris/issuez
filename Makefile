@@ -12,7 +12,7 @@ help:
 GO_FILES=$(shell find . -path '*.go' -not -name '*_test.go')
 
 issuez: ${GO_FILES}
-	go build -o ./issuez ./cmd/issuez
+	go build -o ./issuez .
 
 # Testing
 

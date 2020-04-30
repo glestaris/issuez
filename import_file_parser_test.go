@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	main "github.com/glestaris/issuez/cmd/issuez"
+	"github.com/glestaris/issuez"
 	"github.com/glestaris/issuez/domain"
 )
 

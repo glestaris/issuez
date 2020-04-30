@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	jirapm "github.com/glestaris/issuez"
+	"github.com/glestaris/issuez/tracker"
 	"github.com/glestaris/issuez/domain"
 	"github.com/glestaris/issuez/jira"
 	gojira "gopkg.in/andygrunwald/go-jira.v1"
@@ -69,8 +69,8 @@ func newGoJiraClient(t *testing.T, tc testConfig) *gojira.Client {
 	return gjc
 }
 
-func newTrackerService(t *testing.T, tc testConfig) jirapm.TrackerService {
-	trackerService, err := jirapm.NewTrackerService(domain.Tracker{
+func newTrackerService(t *testing.T, tc testConfig) tracker.TrackerService {
+	trackerService, err := tracker.NewTrackerService(domain.Tracker{
 		Type: "jira",
 		Config: map[string]string{
 			"apiHost":     tc.jiraAPIHost,

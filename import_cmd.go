@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	jirapm "github.com/glestaris/issuez"
+	"github.com/glestaris/issuez/tracker"
 	"github.com/glestaris/issuez/domain"
 )
 
@@ -46,7 +46,7 @@ var importCmd = &cobra.Command{
 			fmt.Printf("Found %d issues in the markdown file\n", len(issues))
 		}
 
-		trackerService, err := jirapm.NewTrackerService(domain.Tracker{
+		trackerService, err := tracker.NewTrackerService(domain.Tracker{
 			Type: "jira",
 			Config: map[string]string{
 				"apiHost":     jiraAPIHost,

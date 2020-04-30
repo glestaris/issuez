@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	blackfriday "github.com/russross/blackfriday/v2"
+	"github.com/russross/blackfriday/v2"
 	"github.com/glestaris/issuez/domain"
 )
 
