@@ -11,7 +11,7 @@ import (
 )
 
 type testConfig struct {
-	jiraPmExePath   string
+	issuezExePath   string
 	jiraAPIHost     string
 	jiraAPIUsername string
 	jiraAPIToken    string
@@ -27,14 +27,14 @@ func newTestConfigMsg(varName string) string {
 
 func newTestConfig(t *testing.T) testConfig {
 	tc := testConfig{
-		jiraPmExePath:   os.Getenv("TEST_JIRA_PM_EXE_PATH"),
+		issuezExePath:   os.Getenv("TEST_ISSUEZ_EXE_PATH"),
 		jiraAPIHost:     os.Getenv("TEST_JIRA_API_HOST"),
 		jiraAPIUsername: os.Getenv("TEST_JIRA_API_USERNAME"),
 		jiraAPIToken:    os.Getenv("TEST_JIRA_API_TOKEN"),
 		jiraProjectKey:  os.Getenv("TEST_JIRA_PROJECT_KEY"),
 	}
 	require.NotEmpty(
-		t, tc.jiraPmExePath, newTestConfigMsg("TEST_JIRA_PM_EXE_PATH"),
+		t, tc.issuezExePath, newTestConfigMsg("TEST_ISSUEZ_EXE_PATH"),
 	)
 	require.NotEmpty(
 		t, tc.jiraAPIHost, newTestConfigMsg("TEST_JIRA_API_HOST"),
@@ -70,7 +70,7 @@ func (c *testableCommand) RunSubcommand(
 		subcommand,
 	}
 	cmdArg = append(cmdArg, arg...)
-	cmd := exec.Command(c.config.jiraPmExePath, cmdArg...)
+	cmd := exec.Command(c.config.issuezExePath, cmdArg...)
 	return cmd.CombinedOutput()
 }
 

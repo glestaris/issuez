@@ -20,7 +20,7 @@ func TestConnectionTestError(t *testing.T) {
 	tc := newTestConfig(t)
 
 	cmd := newTestableCommand(testConfig{
-		jiraPmExePath:   tc.jiraPmExePath,
+		issuezExePath:   tc.issuezExePath,
 		jiraAPIHost:     tc.jiraAPIHost,
 		jiraAPIUsername: "foo@bar.com",
 		jiraAPIToken:    "abc123",

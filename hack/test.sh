@@ -18,7 +18,7 @@ if echo "$@" | grep "acceptance" 2>&1 >/dev/null; then
 
     debug "Build artifact is ready."
 
-    export TEST_JIRA_PM_EXE_PATH="${PWD}/issuez"
+    export TEST_ISSUEZ_EXE_PATH="${PWD}/issuez"
 fi
 
 runner="richgo"
