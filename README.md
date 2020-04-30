@@ -19,7 +19,7 @@ Otherwise, you may use one of the static binaries found in releases.
 `issuez` is a CLI that can be configured to connect to a JIRA instance and
 import issues from a markdown file. The markdown file looks as follows:
 
-```
+````
 [Task] Task title
 
 Task **description** in markdown.
@@ -47,13 +47,13 @@ _As a user, ..._
 
 Code blocks work too:
 
-\`\`\`python
+```python
 x = 12
-\`\`\`
+```
 
 E: EPIC-123
 L: my-label
-```
+````
 
 Run `issuez` using the following flags:
 
