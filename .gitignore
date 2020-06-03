@@ -5,7 +5,7 @@
 .vim
 
 # Binary 
-/issuez
+/dist
 
 # Coverage artifacts
 /cp.out

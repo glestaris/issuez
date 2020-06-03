@@ -1,7 +1,7 @@
-.PHONY: unit-test integration-test acceptance-test test coverage clean
+.PHONY: release unit-test integration-test acceptance-test test coverage clean
 
 help:
-	@echo "issuez........................... Build issuez CLI"
+	@echo "release .......................... Build issuez CLI supported OSs"
 	@echo "test-unit ........................ Run unit tests"
 	@echo "test-integration ................. Run integration tests"
 	@echo "test-acceptance .................. Run acceptance tests"
@@ -11,8 +11,13 @@ help:
 
 GO_FILES=$(shell find . -path '*.go' -not -name '*_test.go')
 
-issuez: ${GO_FILES}
-	go build -o ./issuez .
+release: ./dist/issuez-linux ./dist/issuez-darwin
+
+./dist/issuez-linux: ${GO_FILES}
+	GOOS=linux go build -o ./dist/issuez-linux .
+
+./dist/issuez-darwin: ${GO_FILES}
+	GOOS=darwin go build -o ./dist/issuez-darwin .
 
 # Testing
 
@@ -50,5 +55,5 @@ coverage: clean
 # Housekeeping
 
 clean:
-	rm -f ./issuez ./cp.out ./coverage.html
+	rm -rf ./dist ./cp.out ./coverage.html
 	go clean -testcache
