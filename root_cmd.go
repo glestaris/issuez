@@ -18,7 +18,7 @@ var rootCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Please use one of the subcommands.")
 	},
-	Version: "0.1.0",
+	Version: "1.0.0-beta.01",
 }
 
 func init() {
